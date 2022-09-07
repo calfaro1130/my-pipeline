@@ -1,6 +1,8 @@
 import aws_cdk as cdk
 from aws_cdk.pipelines import CodePipeline, CodePipelineSource, ShellStep
 
+from constructs import Construct
+
 class MyPipelineStack(cdk.Stack):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
